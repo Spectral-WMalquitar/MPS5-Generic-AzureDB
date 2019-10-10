@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{07244505-41BE-4936-B2E1-0C919C381A31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportObjectsGovernment</RootNamespace>
+    <AssemblyName>ReportObjectsGovernment</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsGovernment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsGovernment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsGovernment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>ReportObjectsGovernment.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.XtraPrinting" />
+    <Import Include="DevExpress.XtraReports" />
+    <Import Include="DevExpress.XtraReports.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="Reports" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="Class\AllotSlip.vb" />
+    <Compile Include="Class\AMOSUPCrewList.vb" />
+    <Compile Include="Class\MonthlyContribution.vb" />
+    <Compile Include="Class\MonthlyR1A.vb" />
+    <Compile Include="Class\PhilhealthER2.vb" />
+    <Compile Include="Class\PhilHealthRF1.vb" />
+    <Compile Include="Class\SSSLoanCert.vb" />
+    <Compile Include="Class\MCRRemit.vb" />
+    <Compile Include="Class\HDMFRemit.vb" />
+    <Compile Include="Class\MCRContriCert.vb" />
+    <Compile Include="Class\HDMFContriCert.vb" />
+    <Compile Include="Reports\rptMonthlyContribution.designer.vb">
+      <DependentUpon>rptMonthlyContribution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptMonthlyContribution.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptMonthlyHDMF.Designer.vb">
+      <DependentUpon>rptMonthlyHDMF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptMonthlyHDMF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptMonthlyR1A.designer.vb">
+      <DependentUpon>rptMonthlyR1A.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptMonthlyR1A.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPhilhealthER2.designer.vb">
+      <DependentUpon>rptPhilhealthER2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPhilhealthER2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSSSLoanCert.Designer.vb">
+      <DependentUpon>rptSSSLoanCert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSSSLoanCert.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptHDMFContriCert.Designer.vb">
+      <DependentUpon>rptHDMFContriCert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptHDMFContriCert.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptMCRContriCert.Designer.vb">
+      <DependentUpon>rptMCRContriCert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptMCRContriCert.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptHeader.Designer.vb">
+      <DependentUpon>rptHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptHeader.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\InfoSheet.vb" />
+    <Compile Include="Class\InfoSheetOFW.vb" />
+    <Compile Include="Class\POEACont.vb" />
+    <Compile Include="Class\RAF.vb" />
+    <Compile Include="Class\RPS.vb" />
+    <Compile Include="Class\SSSContriCert.vb" />
+    <Compile Include="Class\SSSRemitCov.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\rptAllotSlip.Designer.vb">
+      <DependentUpon>rptAllotSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAllotSlip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAMOSUPCrewList.Designer.vb">
+      <DependentUpon>rptAMOSUPCrewList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAMOSUPCrewList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInfoSheet.Designer.vb">
+      <DependentUpon>rptInfoSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInfoSheet.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInfoSheetOFW.Designer.vb">
+      <DependentUpon>rptInfoSheetOFW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInfoSheetOFW.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPOEACont.Designer.vb">
+      <DependentUpon>rptPOEACont.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPOEACont.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptRAF.Designer.vb">
+      <DependentUpon>rptRAF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptRAF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptRPS.Designer.vb">
+      <DependentUpon>rptRPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptRPS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSSSContriCert.Designer.vb">
+      <DependentUpon>rptSSSContriCert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSSSContriCert.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSSSRemitCov.Designer.vb">
+      <DependentUpon>rptSSSRemitCov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSSSRemitCov.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSSSRemitCov_sub.Designer.vb">
+      <DependentUpon>rptSSSRemitCov_sub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSSSRemitCov_sub.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMonthlyContribution.resx">
+      <DependentUpon>rptMonthlyContribution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMonthlyHDMF.resx">
+      <DependentUpon>rptMonthlyHDMF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMonthlyR1A.resx">
+      <DependentUpon>rptMonthlyR1A.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPhilhealthER2.resx">
+      <DependentUpon>rptPhilhealthER2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSSSLoanCert.resx">
+      <DependentUpon>rptSSSLoanCert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptHDMFContriCert.resx">
+      <DependentUpon>rptHDMFContriCert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMCRContriCert.resx">
+      <DependentUpon>rptMCRContriCert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAllotSlip.resx">
+      <DependentUpon>rptAllotSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAMOSUPCrewList.resx">
+      <DependentUpon>rptAMOSUPCrewList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptHeader.resx">
+      <DependentUpon>rptHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInfoSheet.resx">
+      <DependentUpon>rptInfoSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInfoSheetOFW.resx">
+      <DependentUpon>rptInfoSheetOFW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPOEACont.resx">
+      <DependentUpon>rptPOEACont.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptRAF.resx">
+      <DependentUpon>rptRAF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptRPS.resx">
+      <DependentUpon>rptRPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSSSContriCert.resx">
+      <DependentUpon>rptSSSContriCert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSSSRemitCov.resx">
+      <DependentUpon>rptSSSRemitCov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSSSRemitCov_sub.resx">
+      <DependentUpon>rptSSSRemitCov_sub.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

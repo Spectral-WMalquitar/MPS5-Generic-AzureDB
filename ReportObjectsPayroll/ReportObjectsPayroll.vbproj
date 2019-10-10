@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C0020EA7-C3D6-4EEB-B1F5-7BB81A14984D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportObjectsPayroll</RootNamespace>
+    <AssemblyName>ReportObjectsPayroll</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsPayroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsPayroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsPayroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>ReportObjectsPayroll.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.XtraPrinting" />
+    <Import Include="DevExpress.XtraReports" />
+    <Import Include="DevExpress.XtraReports.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="Reports" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home Allotment\Report\rptPayHAReportCrewPerVsl.Designer.vb">
+      <DependentUpon>rptPayHAReportCrewPerVsl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Allotment\Report\rptPayHAReportCrewPerVsl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Home Allotment\Class\PayHACrew_PerVsl.vb" />
+    <Compile Include="Disketting\Class\BDORemittance.vb" />
+    <Compile Include="Disketting\Class\BPIExport.vb" />
+    <Compile Include="Disketting\Class\frmBDOParam.Designer.vb">
+      <DependentUpon>frmBDOParam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Disketting\Class\frmBDOParam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disketting\Report\rptBDORemittance.Designer.vb">
+      <DependentUpon>rptBDORemittance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Disketting\Report\rptBDORemittance.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Disketting\Report\rptBPIExport.Designer.vb">
+      <DependentUpon>rptBPIExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Disketting\Report\rptBPIExport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Home Allotment\Class\RetirementPlan.vb" />
+    <Compile Include="Home Allotment\Report\rptRetirementPlan.Designer.vb">
+      <DependentUpon>rptRetirementPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Allotment\Report\rptRetirementPlan.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaySASummaryVsl_2.vb" />
+    <Compile Include="rptPaySASummaryCrew_2.vb" />
+    <Compile Include="Home Allotment\Class\BankReport.vb" />
+    <Compile Include="Home Allotment\Report\rptBankReport.Designer.vb">
+      <DependentUpon>rptBankReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Allotment\Report\rptBankReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Onboard\Class\CrewPay.vb" />
+    <Compile Include="Onboard\Class\CrewWageAcct.vb" />
+    <Compile Include="Onboard\Reports\rptCrewPay.Designer.vb">
+      <DependentUpon>rptCrewPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewPay.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct_Deduct.Designer.vb">
+      <DependentUpon>rptCrewWageAcct_Deduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct_Deduct.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct.Designer.vb">
+      <DependentUpon>rptCrewWageAcct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct_Bal.Designer.vb">
+      <DependentUpon>rptCrewWageAcct_Bal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct_Bal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct_Earn.Designer.vb">
+      <DependentUpon>rptCrewWageAcct_Earn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Onboard\Reports\rptCrewWageAcct_Earn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PayrollFilterOption.Designer.vb">
+      <DependentUpon>PayrollFilterOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollFilterOption.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rptPayHACrew_2.vb" />
+    <Compile Include="frmPayHACrewPS.Designer.vb">
+      <DependentUpon>frmPayHACrewPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayHACrewPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaySASummaryCrewPS.Designer.vb">
+      <DependentUpon>frmPaySASummaryCrewPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaySASummaryCrewPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaySASummaryVslPS.Designer.vb">
+      <DependentUpon>frmPaySASummaryVslPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaySASummaryVslPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyHA.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <!--<<<<<<< HEAD-->
+    <Compile Include="rptMonthlyHA.Designer.vb">
+      <DependentUpon>rptMonthlyHA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptMonthlyHA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMonthlyHA_Sub_Detail.Designer.vb">
+      <DependentUpon>rptMonthlyHA_Sub_Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptMonthlyHA_Sub_Detail.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMonthlyHA_Sub_Total.Designer.vb">
+      <DependentUpon>rptMonthlyHA_Sub_Total.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptMonthlyHA_Sub_Total.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <!--=======-->
+    <Compile Include="rptPayHACrew.vb" />
+    <Compile Include="rptPayHAReportCrew.Designer.vb">
+      <DependentUpon>rptPayHAReportCrew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew.vb">
+      <!-->>>>>>> b72b478021ba29ecd7bfe7284dded864bad9fe8a-->
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_ded.Designer.vb">
+      <DependentUpon>rptPayHAReportCrew_sub_ded.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_ded.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_earn.Designer.vb">
+      <DependentUpon>rptPayHAReportCrew_sub_earn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_earn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_netSum.Designer.vb">
+      <DependentUpon>rptPayHAReportCrew_sub_netSum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_netSum.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_totsum_ded.Designer.vb">
+      <DependentUpon>rptPayHAReportCrew_sub_totsum_ded.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_totsum_ded.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_totsum_earn.Designer.vb">
+      <DependentUpon>rptPayHAReportCrew_sub_totsum_earn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPayHAReportCrew_sub_totsum_earn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaySASummary.vb" />
+    <Compile Include="rptPaySASummaryCrew.vb" />
+    <Compile Include="rptPaySASummaryReport.Designer.vb">
+      <DependentUpon>rptPaySASummaryReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPaySASummaryReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaySASummaryReportCrew.Designer.vb">
+      <DependentUpon>rptPaySASummaryReportCrew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPaySASummaryReportCrew.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaySASummaryReportVsl.Designer.vb">
+      <DependentUpon>rptPaySASummaryReportVsl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptPaySASummaryReportVsl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaySASummaryVsl.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Home Allotment\Report\rptPayHAReportCrewPerVsl.resx">
+      <DependentUpon>rptPayHAReportCrewPerVsl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disketting\Class\frmBDOParam.resx">
+      <DependentUpon>frmBDOParam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disketting\Report\rptBDORemittance.resx">
+      <DependentUpon>rptBDORemittance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disketting\Report\rptBPIExport.resx">
+      <DependentUpon>rptBPIExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayHACrewPS.resx">
+      <DependentUpon>frmPayHACrewPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaySASummaryCrewPS.resx">
+      <DependentUpon>frmPaySASummaryCrewPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaySASummaryVslPS.resx">
+      <DependentUpon>frmPaySASummaryVslPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Allotment\Report\rptBankReport.resx">
+      <DependentUpon>rptBankReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Allotment\Report\rptRetirementPlan.resx">
+      <DependentUpon>rptRetirementPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <!--<<<<<<< HEAD-->
+    <EmbeddedResource Include="Onboard\Reports\rptCrewPay.resx">
+      <DependentUpon>rptCrewPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Onboard\Reports\rptCrewWageAcct_Deduct.resx">
+      <DependentUpon>rptCrewWageAcct_Deduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Onboard\Reports\rptCrewWageAcct.resx">
+      <DependentUpon>rptCrewWageAcct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Onboard\Reports\rptCrewWageAcct_Bal.resx">
+      <DependentUpon>rptCrewWageAcct_Bal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Onboard\Reports\rptCrewWageAcct_Earn.resx">
+      <DependentUpon>rptCrewWageAcct_Earn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollFilterOption.resx">
+      <DependentUpon>PayrollFilterOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="rptMonthlyHA.resx">
+      <DependentUpon>rptMonthlyHA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMonthlyHA_Sub_Detail.resx">
+      <DependentUpon>rptMonthlyHA_Sub_Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMonthlyHA_Sub_Total.resx">
+      <DependentUpon>rptMonthlyHA_Sub_Total.vb</DependentUpon>
+    </EmbeddedResource>
+    <!--=======-->
+    <EmbeddedResource Include="rptPayHAReportCrew.resx">
+      <DependentUpon>rptPayHAReportCrew.vb</DependentUpon>
+      <!-->>>>>>> b72b478021ba29ecd7bfe7284dded864bad9fe8a-->
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPayHAReportCrew_sub_ded.resx">
+      <DependentUpon>rptPayHAReportCrew_sub_ded.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPayHAReportCrew_sub_earn.resx">
+      <DependentUpon>rptPayHAReportCrew_sub_earn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPayHAReportCrew_sub_netSum.resx">
+      <DependentUpon>rptPayHAReportCrew_sub_netSum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPayHAReportCrew_sub_totsum_ded.resx">
+      <DependentUpon>rptPayHAReportCrew_sub_totsum_ded.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPayHAReportCrew_sub_totsum_earn.resx">
+      <DependentUpon>rptPayHAReportCrew_sub_totsum_earn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPaySASummaryReport.resx">
+      <DependentUpon>rptPaySASummaryReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPaySASummaryReportCrew.resx">
+      <DependentUpon>rptPaySASummaryReportCrew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPaySASummaryReportVsl.resx">
+      <DependentUpon>rptPaySASummaryReportVsl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseControl\BaseControl.vbproj">
+      <Project>{C096B102-0A25-4E16-9863-2D63677C7CB7}</Project>
+      <Name>BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF625293-79C4-42E8-9703-F6AEA46F0DB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>ReportObjectsAshore</RootNamespace>
+    <AssemblyName>ReportObjectsAshore</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsAshore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ReportObjectsAshore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsAshore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsAshore.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.XtraPrinting" />
+    <Import Include="DevExpress.XtraReports" />
+    <Import Include="DevExpress.XtraReports.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="Reports" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="Class\CrewWithoutSpecificCompanyDefinedDoc.vb" />
+    <Compile Include="Class\CrewWithSpecificCompanyDefinedDoc.vb" />
+    <Compile Include="Class\CrewWithoutSpecificCertificate.vb" />
+    <Compile Include="Class\CrewWithoutSpecificTravel.vb" />
+    <Compile Include="Class\CrewWithoutSpecificMedical.vb" />
+    <Compile Include="Class\CrewWithSpecificCertificate.vb" />
+    <Compile Include="Class\CrewWithSpecificTravel.vb" />
+    <Compile Include="Class\CrewWithSpecificMedical.vb" />
+    <Compile Include="Class\CrewAsh_AllCrew_Rem.vb" />
+    <Compile Include="Class\CrewAsh_New.vb" />
+    <Compile Include="Class\CrewAsh_Sick.vb" />
+    <Compile Include="Class\CrewRequiredToTakeASpecificCourse.vb" />
+    <Compile Include="Class\CrewWithoutSpecificCourse.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class\CrewWithSpecificCourse.vb" />
+    <Compile Include="Reports\rptCrewWithoutSpecificCompanyDefinedDoc.Designer.vb">
+      <DependentUpon>rptCrewWithoutSpecificCompanyDefinedDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutSpecificCompanyDefinedDoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificCompanyDefinedDoc.Designer.vb">
+      <DependentUpon>rptCrewWithSpecificCompanyDefinedDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificCompanyDefinedDoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificTravel.Designer.vb">
+      <DependentUpon>rptCrewWithoutASpecificTravel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificTravel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificMedical.Designer.vb">
+      <DependentUpon>rptCrewWithoutASpecificMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificMedical.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificCertificate.Designer.vb">
+      <DependentUpon>rptCrewWithoutASpecificCertificate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificCertificate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificTravel.Designer.vb">
+      <DependentUpon>rptCrewWithSpecificTravel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificTravel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificMedical.Designer.vb">
+      <DependentUpon>rptCrewWithSpecificMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificMedical.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificCertificate.Designer.vb">
+      <DependentUpon>rptCrewWithSpecificCertificate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificCertificate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewRequiredToTakeASpecificCourse.Designer.vb">
+      <DependentUpon>rptCrewRequiredToTakeASpecificCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewRequiredToTakeASpecificCourse.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificCourse.Designer.vb">
+      <DependentUpon>rptCrewWithoutASpecificCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithoutASpecificCourse.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificCourse.Designer.vb">
+      <DependentUpon>rptCrewWithSpecificCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewWithSpecificCourse.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewAsh_AllCrew_Rem.Designer.vb">
+      <DependentUpon>rptCrewAsh_AllCrew_Rem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewAsh_AllCrew_Rem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewAsh_New.Designer.vb">
+      <DependentUpon>rptCrewAsh_New.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewAsh_New.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewAsh_Sick.Designer.vb">
+      <DependentUpon>rptCrewAsh_Sick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewAsh_Sick.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithoutSpecificCompanyDefinedDoc.resx">
+      <DependentUpon>rptCrewWithoutSpecificCompanyDefinedDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithSpecificCompanyDefinedDoc.resx">
+      <DependentUpon>rptCrewWithSpecificCompanyDefinedDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithoutASpecificTravel.resx">
+      <DependentUpon>rptCrewWithoutASpecificTravel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithoutASpecificMedical.resx">
+      <DependentUpon>rptCrewWithoutASpecificMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithoutASpecificCertificate.resx">
+      <DependentUpon>rptCrewWithoutASpecificCertificate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithSpecificTravel.resx">
+      <DependentUpon>rptCrewWithSpecificTravel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithSpecificMedical.resx">
+      <DependentUpon>rptCrewWithSpecificMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithSpecificCertificate.resx">
+      <DependentUpon>rptCrewWithSpecificCertificate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewRequiredToTakeASpecificCourse.resx">
+      <DependentUpon>rptCrewRequiredToTakeASpecificCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithoutASpecificCourse.resx">
+      <DependentUpon>rptCrewWithoutASpecificCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewWithSpecificCourse.resx">
+      <DependentUpon>rptCrewWithSpecificCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewAsh_AllCrew_Rem.resx">
+      <DependentUpon>rptCrewAsh_AllCrew_Rem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewAsh_New.resx">
+      <DependentUpon>rptCrewAsh_New.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewAsh_Sick.resx">
+      <DependentUpon>rptCrewAsh_Sick.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

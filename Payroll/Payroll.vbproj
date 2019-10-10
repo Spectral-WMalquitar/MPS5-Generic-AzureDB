@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D8BCE451-202C-4ED3-B18E-BCE89B6CDB8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Payroll</RootNamespace>
+    <AssemblyName>Payroll</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>Payroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>Payroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>Payroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Payroll.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Black.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Win, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BaseControl" />
+    <Import Include="BaseControl.My" />
+    <Import Include="BaseControl.My.Resources" />
+    <Import Include="DevExpress.Data" />
+    <Import Include="DevExpress.Utils" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+    <Import Include="Utilities.My" />
+    <Import Include="Utilities.My.Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="fdlgPayrollLock_Multiple.Designer.vb">
+      <DependentUpon>fdlgPayrollLock_Multiple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fdlgPayrollLock_Multiple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrewCashAdvance.Designer.vb">
+      <DependentUpon>CrewCashAdvance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrewCashAdvance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fdlgPayrollLock.Designer.vb">
+      <DependentUpon>fdlgPayrollLock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fdlgPayrollLock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayCrewError.Designer.vb">
+      <DependentUpon>frmPayCrewError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayCrewError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayReportsvb.Designer.vb">
+      <DependentUpon>frmPayReportsvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayReportsvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayrollList.Designer.vb">
+      <DependentUpon>frmPayrollList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayrollList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GovtReceipts.Designer.vb">
+      <DependentUpon>GovtReceipts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GovtReceipts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PayAdvanceList.Designer.vb">
+      <DependentUpon>PayAdvanceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayAdvanceList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayAdvances.Designer.vb">
+      <DependentUpon>PayAdvances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayAdvances.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollFilter.Designer.vb">
+      <DependentUpon>PayrollFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollProcessHA.Designer.vb">
+      <DependentUpon>PayrollProcessHA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollProcessHA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrewAmortization.Designer.vb">
+      <DependentUpon>CrewAmortization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrewAmortization.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrewWages.Designer.vb">
+      <DependentUpon>CrewWages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrewWages.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmRelatives.Designer.vb">
+      <DependentUpon>frmRelatives.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatives.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PayrollFunctions.vb" />
+    <Compile Include="PayrollModule.vb" />
+    <Compile Include="PayrollProcessOnb.designer.vb">
+      <DependentUpon>PayrollProcessOnb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollProcessOnb.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollProcessSA.designer.vb">
+      <DependentUpon>PayrollProcessSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollProcessSA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollReportControl.Designer.vb">
+      <DependentUpon>PayrollReportControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollReportControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollViewHA.Designer.vb">
+      <DependentUpon>PayrollViewHA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollViewHA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollViewONB.designer.vb">
+      <DependentUpon>PayrollViewONB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollViewONB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollViewSA.Designer.vb">
+      <DependentUpon>PayrollViewSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollViewSA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollWaitForm.Designer.vb">
+      <DependentUpon>PayrollWaitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollWaitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remittances.Designer.vb">
+      <DependentUpon>Remittances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remittances.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fdlgPayrollLock_Multiple.resx">
+      <DependentUpon>fdlgPayrollLock_Multiple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewCashAdvance.resx">
+      <DependentUpon>CrewCashAdvance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdlgPayrollLock.resx">
+      <DependentUpon>fdlgPayrollLock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayCrewError.resx">
+      <DependentUpon>frmPayCrewError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayReportsvb.resx">
+      <DependentUpon>frmPayReportsvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayrollList.resx">
+      <DependentUpon>frmPayrollList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GovtReceipts.resx">
+      <DependentUpon>GovtReceipts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayAdvanceList.resx">
+      <DependentUpon>PayAdvanceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayAdvances.resx">
+      <DependentUpon>PayAdvances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollFilter.resx">
+      <DependentUpon>PayrollFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollProcessHA.resx">
+      <DependentUpon>PayrollProcessHA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewAmortization.resx">
+      <DependentUpon>CrewAmortization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewWages.resx">
+      <DependentUpon>CrewWages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatives.resx">
+      <DependentUpon>frmRelatives.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollProcessOnb.resx">
+      <DependentUpon>PayrollProcessOnb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollProcessSA.resx">
+      <DependentUpon>PayrollProcessSA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollReportControl.resx">
+      <DependentUpon>PayrollReportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollViewHA.resx">
+      <DependentUpon>PayrollViewHA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollViewONB.resx">
+      <DependentUpon>PayrollViewONB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollViewSA.resx">
+      <DependentUpon>PayrollViewSA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollWaitForm.resx">
+      <DependentUpon>PayrollWaitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remittances.resx">
+      <DependentUpon>Remittances.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseControl\BaseControl.vbproj">
+      <Project>{C096B102-0A25-4E16-9863-2D63677C7CB7}</Project>
+      <Name>BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportObjectsPayroll\ReportObjectsPayroll.vbproj">
+      <Project>{C0020EA7-C3D6-4EEB-B1F5-7BB81A14984D}</Project>
+      <Name>ReportObjectsPayroll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.vbproj">
+      <Project>{1DDE1B22-3DDC-4D1C-AEC6-ECC286074B3C}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlock24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlock300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock 16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock 24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh 16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

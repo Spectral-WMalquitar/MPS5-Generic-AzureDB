@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{711A7A88-53E2-450B-B360-1270D049276C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>QualificationMatrixReports</RootNamespace>
+    <AssemblyName>QualificationMatrixReports</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>QualificationMatrixReports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QualificationMatrixReports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Charts.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Data.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Office.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.PivotGrid.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Printing.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.RichEdit.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Sparkline.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Utils.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Utils.v14.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraCharts.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraEditors.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraGauges.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPivotGrid.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPrinting.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraReports.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraReports.v14.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraScheduler.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.2.Reporting, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraScheduler.v14.2.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BaseControl" />
+    <Import Include="DevExpress.XtraPrinting" />
+    <Import Include="DevExpress.XtraReports" />
+    <Import Include="DevExpress.XtraReports.Extensions" />
+    <Import Include="DevExpress.XtraReports.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="Classes\rptQualificationExperienceMatrixReport.vb" />
+    <Compile Include="Classes\rptReportVersion1.vb" />
+    <Compile Include="Classes\rptReportVersion2.vb" />
+    <Compile Include="Classes\rptReportVersion3.vb" />
+    <Compile Include="Classes\rptReportVersion4.vb" />
+    <Compile Include="Classes\rptVettingMatrixReportChevronTotal.vb" />
+    <Compile Include="Classes\rptVettingMatrixReportConocoPhilips.vb" />
+    <Compile Include="Classes\rptVettingMatrixReportKoch.vb" />
+    <Compile Include="Classes\rptVettingMatrixReportShell.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\QualificationExperienceMatrixReport.Designer.vb">
+      <DependentUpon>QualificationExperienceMatrixReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\QualificationExperienceMatrixReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportVersion1.Designer.vb">
+      <DependentUpon>ReportVersion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportVersion1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportVersion1_SubContents.Designer.vb">
+      <DependentUpon>ReportVersion1_SubContents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportVersion1_SubContents.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportVersion2.Designer.vb">
+      <DependentUpon>ReportVersion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportVersion2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportVersion3.Designer.vb">
+      <DependentUpon>ReportVersion3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportVersion3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportVersion4.Designer.vb">
+      <DependentUpon>ReportVersion4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportVersion4.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportChevronTotal.Designer.vb">
+      <DependentUpon>VettingMatrixReportChevronTotal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportChevronTotal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportConocoPhilips.Designer.vb">
+      <DependentUpon>VettingMatrixReportConocoPhilips.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportConocoPhilips.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportKoch.Designer.vb">
+      <DependentUpon>VettingMatrixReportKoch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportKoch.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportShell.Designer.vb">
+      <DependentUpon>VettingMatrixReportShell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\VettingMatrixReportShell.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\QualificationExperienceMatrixReport.resx">
+      <DependentUpon>QualificationExperienceMatrixReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportVersion1.resx">
+      <DependentUpon>ReportVersion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportVersion1_SubContents.resx">
+      <DependentUpon>ReportVersion1_SubContents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportVersion2.resx">
+      <DependentUpon>ReportVersion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportVersion3.resx">
+      <DependentUpon>ReportVersion3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportVersion4.resx">
+      <DependentUpon>ReportVersion4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VettingMatrixReportChevronTotal.resx">
+      <DependentUpon>VettingMatrixReportChevronTotal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VettingMatrixReportConocoPhilips.resx">
+      <DependentUpon>VettingMatrixReportConocoPhilips.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VettingMatrixReportKoch.resx">
+      <DependentUpon>VettingMatrixReportKoch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VettingMatrixReportShell.resx">
+      <DependentUpon>VettingMatrixReportShell.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Admin\Admin.vbproj">
+      <Project>{6D7C477B-7951-4674-8912-988FCA6C89D3}</Project>
+      <Name>Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseControl\BaseControl.vbproj">
+      <Project>{C096B102-0A25-4E16-9863-2D63677C7CB7}</Project>
+      <Name>BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crewing\Crewing.vbproj">
+      <Project>{60F7779D-C030-4B9A-B7D0-8264DC2EFAEB}</Project>
+      <Name>Crewing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocumentViewer\DocumentViewer.vbproj">
+      <Project>{D0CDCD9F-2ECB-4133-8632-98ED2604D69D}</Project>
+      <Name>DocumentViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qualification\Qualification.vbproj">
+      <Project>{7E648496-804F-40C5-9D5A-25433928D910}</Project>
+      <Name>Qualification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.vbproj">
+      <Project>{1DDE1B22-3DDC-4D1C-AEC6-ECC286074B3C}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

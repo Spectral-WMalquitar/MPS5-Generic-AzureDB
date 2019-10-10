@@ -1,0 +1,3 @@
+﻿Public Class rptPayHAReportCrew_sub_totsum_earn
+
+End Class

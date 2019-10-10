@@ -1,0 +1,1616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{6D7C477B-7951-4674-8912-988FCA6C89D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Admin</RootNamespace>
+    <AssemblyName>Admin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Admin.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NewMPS_Admin_48x48.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>Admin.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ChilkatDotNet4, Version=9.5.0.55, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Black.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Xpf.Themes.Office2007Black.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraLayout.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="KPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Admin" />
+    <Import Include="Admin.My" />
+    <Import Include="Admin.My.Resources" />
+    <Import Include="BaseControl" />
+    <Import Include="BaseControl.My" />
+    <Import Include="BaseControl.My.Resources" />
+    <Import Include="DevExpress.Xpf" />
+    <Import Include="DocumentViewer" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="MPS4.My" />
+    <Import Include="MPS4.My.Resources" />
+    <Import Include="Reports" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+    <Import Include="Utilities.My" />
+    <Import Include="Utilities.My.Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmCashAdvance.Designer.vb">
+      <DependentUpon>AdmCashAdvance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmCashAdvance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmCashAdvancesList.Designer.vb">
+      <DependentUpon>AdmCashAdvancesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmCashAdvancesList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmGovtReceipt.Designer.vb">
+      <DependentUpon>AdmGovtReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmGovtReceipt.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmGovtReceiptsList.Designer.vb">
+      <DependentUpon>AdmGovtReceiptsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmGovtReceiptsList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmTravelCostItemList.Designer.vb">
+      <DependentUpon>AdmTravelCostItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmTravelCostItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmTravelCostItem.Designer.vb">
+      <DependentUpon>AdmTravelCostItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmTravelCostItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminModule.vb" />
+    <Compile Include="AdmKPI.designer.vb">
+      <DependentUpon>AdmKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmKPI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmPayrollPassword.Designer.vb">
+      <DependentUpon>AdmPayrollPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmPayrollPassword.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agent.Designer.vb">
+      <DependentUpon>Agent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgentList.Designer.vb">
+      <DependentUpon>AgentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgentList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgentVslMap.Designer.vb">
+      <DependentUpon>AgentVslMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgentVslMap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgentVslMapList.Designer.vb">
+      <DependentUpon>AgentVslMapList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgentVslMapList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Airline.Designer.vb">
+      <DependentUpon>Airline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Airline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AirlineList.Designer.vb">
+      <DependentUpon>AirlineList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AirlineList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Airport.Designer.vb">
+      <DependentUpon>Airport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Airport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AirportList.Designer.vb">
+      <DependentUpon>AirportList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AirportList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BankList.Designer.vb">
+      <DependentUpon>BankList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BankList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Capacity.Designer.vb">
+      <DependentUpon>Capacity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacity.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CBAType.Designer.vb">
+      <DependentUpon>CBAType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CBAType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CBATypeList.Designer.vb">
+      <DependentUpon>CBATypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CBATypeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CertFunc.Designer.vb">
+      <DependentUpon>CertFunc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CertFunc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CertFuncList.Designer.vb">
+      <DependentUpon>CertFuncList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CertFuncList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CertLimit.Designer.vb">
+      <DependentUpon>CertLimit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CertLimit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CertLimitList.Designer.vb">
+      <DependentUpon>CertLimitList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CertLimitList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CertType.Designer.vb">
+      <DependentUpon>CertType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CertType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CertTypeList.Designer.vb">
+      <DependentUpon>CertTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CertTypeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Company.Designer.vb">
+      <DependentUpon>Company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Company.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompanyDefined.Designer.vb">
+      <DependentUpon>CompanyDefined.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyDefined.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompanyDefinedList.Designer.vb">
+      <DependentUpon>CompanyDefinedList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyDefinedList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompanyList.Designer.vb">
+      <DependentUpon>CompanyList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompetenceTemplate.designer.vb">
+      <DependentUpon>CompetenceTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompetenceTemplate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompetenceTemplateList.designer.vb">
+      <DependentUpon>CompetenceTemplateList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompetenceTemplateList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompTempList.Designer.vb">
+      <DependentUpon>CompTempList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompTempList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bank.Designer.vb">
+      <DependentUpon>Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmBDORemittance.Designer.vb">
+      <DependentUpon>AdmBDORemittance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmBDORemittance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DebugData.Designer.vb">
+      <DependentUpon>DebugData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DebugData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgramSettings_Templates.Designer.vb">
+      <DependentUpon>ProgramSettings_Templates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramSettings_Templates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformTemplate.Designer.vb">
+      <DependentUpon>UniformTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UniformTemplate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UniformTemplateList.Designer.vb">
+      <DependentUpon>UniformTemplateList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UniformTemplateList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UniformIssueType.Designer.vb">
+      <DependentUpon>UniformIssueType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UniformIssueType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UniformIssueTypeList.Designer.vb">
+      <DependentUpon>UniformIssueTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UniformIssueTypeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Garment.Designer.vb">
+      <DependentUpon>Garment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Garment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GarmentList.Designer.vb">
+      <DependentUpon>GarmentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GarmentType.Designer.vb">
+      <DependentUpon>GarmentType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GarmentTypeList.Designer.vb">
+      <DependentUpon>GarmentTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentTypeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DBConnectionFile.Designer.vb">
+      <DependentUpon>DBConnectionFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnectionFile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fdlgAdmPayrollPass.Designer.vb">
+      <DependentUpon>fdlgAdmPayrollPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fdlgAdmPayrollPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMTPConfig.Designer.vb">
+      <DependentUpon>SMTPConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SMTPConfig.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUpdatePayScale.Designer.vb">
+      <DependentUpon>frmUpdatePayScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdatePayScale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequiredTraining.Designer.vb">
+      <DependentUpon>RequiredTraining.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequiredTraining.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RequiredTrainingList.Designer.vb">
+      <DependentUpon>RequiredTrainingList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequiredTrainingList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Country.Designer.vb">
+      <DependentUpon>Country.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Country.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CapacityList.Designer.vb">
+      <DependentUpon>CapacityList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CapacityList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CountryList.Designer.vb">
+      <DependentUpon>CountryList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CountryList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Course.Designer.vb">
+      <DependentUpon>Course.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Course.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourseCost.Designer.vb">
+      <DependentUpon>CourseCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseCost.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourseCostList.Designer.vb">
+      <DependentUpon>CourseCostList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseCostList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourseInst.Designer.vb">
+      <DependentUpon>CourseInst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseInst.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourseInstList.Designer.vb">
+      <DependentUpon>CourseInstList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseInstList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourseList.Designer.vb">
+      <DependentUpon>CourseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrewCmpl.Designer.vb">
+      <DependentUpon>CrewCmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrewCmpl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrewCmplList.Designer.vb">
+      <DependentUpon>CrewCmplList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrewCmplList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Currency.Designer.vb">
+      <DependentUpon>Currency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Currency.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurrencyList.Designer.vb">
+      <DependentUpon>CurrencyList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataUtility.Designer.vb">
+      <DependentUpon>DataUtility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataUtility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department.Designer.vb">
+      <DependentUpon>Department.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Department.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DepartmentList.Designer.vb">
+      <DependentUpon>DepartmentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocGroup.Designer.vb">
+      <DependentUpon>DocGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocGroup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocGroupList.Designer.vb">
+      <DependentUpon>DocGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocGroupList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmDocument.Designer.vb">
+      <DependentUpon>AdmDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmDocument.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentList.Designer.vb">
+      <DependentUpon>DocumentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employer.Designer.vb">
+      <DependentUpon>Employer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployerList.Designer.vb">
+      <DependentUpon>EmployerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fleet.Designer.vb">
+      <DependentUpon>Fleet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fleet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetList.Designer.vb">
+      <DependentUpon>FleetList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FleetList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgramSettings.Designer.vb">
+      <DependentUpon>ProgramSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramSettings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdmMain.designer.vb">
+      <DependentUpon>frmAdmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Language.Designer.vb">
+      <DependentUpon>Language.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Language.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LanguageList.Designer.vb">
+      <DependentUpon>LanguageList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logo.Designer.vb">
+      <DependentUpon>Logo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogoList.Designer.vb">
+      <DependentUpon>LogoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogoList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MedCert.Designer.vb">
+      <DependentUpon>MedCert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MedCert.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MedCertList.Designer.vb">
+      <DependentUpon>MedCertList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MedCertList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MgFleet.Designer.vb">
+      <DependentUpon>MgFleet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MgFleet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MgFleetList.Designer.vb">
+      <DependentUpon>MgFleetList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MgFleetList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MgrTechList.Designer.vb">
+      <DependentUpon>MgrTechList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MgrTechList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MgrTech.Designer.vb">
+      <DependentUpon>MgrTech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MgrTech.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MinCrew.Designer.vb">
+      <DependentUpon>MinCrew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MinCrew.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MinCrewList.Designer.vb">
+      <DependentUpon>MinCrewList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MinCrewList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NatInfo.Designer.vb">
+      <DependentUpon>NatInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NatInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NatInfoList.Designer.vb">
+      <DependentUpon>NatInfoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NatInfoList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayScale.designer.vb">
+      <DependentUpon>PayScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayScale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayScaleList.designer.vb">
+      <DependentUpon>PayScaleList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayScaleList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhilHealth.designer.vb">
+      <DependentUpon>PhilHealth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhilHealth.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhilHealthList.designer.vb">
+      <DependentUpon>PhilHealthList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhilHealthList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PICost.Designer.vb">
+      <DependentUpon>PICost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICost.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PICostList.Designer.vb">
+      <DependentUpon>PICostList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICostList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Port.Designer.vb">
+      <DependentUpon>Port.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Port.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PortAgent.Designer.vb">
+      <DependentUpon>PortAgent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PortAgent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PortAgentList.Designer.vb">
+      <DependentUpon>PortAgentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PortAgentList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PortList.Designer.vb">
+      <DependentUpon>PortList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PortList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rank.Designer.vb">
+      <DependentUpon>Rank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rank.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankGroup.Designer.vb">
+      <DependentUpon>RankGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankGroup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankGroupList.Designer.vb">
+      <DependentUpon>RankGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankGroupList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankList.Designer.vb">
+      <DependentUpon>RankList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankType.Designer.vb">
+      <DependentUpon>RankType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankTypeList.Designer.vb">
+      <DependentUpon>RankTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankTypeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rate.Designer.vb">
+      <DependentUpon>Rate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RateList.Designer.vb">
+      <DependentUpon>RateList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RateList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relation.Designer.vb">
+      <DependentUpon>Relation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RelationList.Designer.vb">
+      <DependentUpon>RelationList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RelationList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemitRcpt.designer.vb">
+      <DependentUpon>RemitRcpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemitRcpt.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemitRcptList.designer.vb">
+      <DependentUpon>RemitRcptList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemitRcptList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Signatories.Designer.vb">
+      <DependentUpon>Signatories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signatories.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignatoriesList.Designer.vb">
+      <DependentUpon>SignatoriesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignatoriesList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSS.designer.vb">
+      <DependentUpon>SSS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSSList.designer.vb">
+      <DependentUpon>SSSList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSSList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Status.Designer.vb">
+      <DependentUpon>Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Status.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusList.Designer.vb">
+      <DependentUpon>StatusList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StatusList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TravelDoc.Designer.vb">
+      <DependentUpon>TravelDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TravelDoc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TravelDocList.Designer.vb">
+      <DependentUpon>TravelDocList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TravelDocList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vessel.Designer.vb">
+      <DependentUpon>Vessel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vessel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VesselGroup.designer.vb">
+      <DependentUpon>VesselGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VesselGroup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VesselGroupList.designer.vb">
+      <DependentUpon>VesselGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VesselGroupList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VesselList.Designer.vb">
+      <DependentUpon>VesselList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VesselList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VesselType.Designer.vb">
+      <DependentUpon>VesselType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VesselType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VesselTypeList.Designer.vb">
+      <DependentUpon>VesselTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VesselTypeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageASH.Designer.vb">
+      <DependentUpon>WageASH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageASH.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageAshEmp.Designer.vb">
+      <DependentUpon>WageAshEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageAshEmp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageAshEmpList.Designer.vb">
+      <DependentUpon>WageAshEmpList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageAshEmpList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageAshList.Designer.vb">
+      <DependentUpon>WageAshList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageAshList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageDen.Designer.vb">
+      <DependentUpon>WageDen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageDen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageDenList.Designer.vb">
+      <DependentUpon>WageDenList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageDenList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageInfo.Designer.vb">
+      <DependentUpon>WageInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageInfoList.Designer.vb">
+      <DependentUpon>WageInfoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageInfoList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageONB.Designer.vb">
+      <DependentUpon>WageONB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageONB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageOnbList.Designer.vb">
+      <DependentUpon>WageOnbList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageOnbList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WagePrd.Designer.vb">
+      <DependentUpon>WagePrd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WagePrd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WagePrdList.Designer.vb">
+      <DependentUpon>WagePrdList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WagePrdList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageScaleCalendar.Designer.vb">
+      <DependentUpon>WageScaleCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageScaleCalendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WageScaleCalendarList.Designer.vb">
+      <DependentUpon>WageScaleCalendarList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WageScaleCalendarList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WMBP.designer.vb">
+      <DependentUpon>WMBP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WMBP.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WMBPList.designer.vb">
+      <DependentUpon>WMBPList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WMBPList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdmCashAdvance.resx">
+      <DependentUpon>AdmCashAdvance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmCashAdvancesList.resx">
+      <DependentUpon>AdmCashAdvancesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmGovtReceipt.resx">
+      <DependentUpon>AdmGovtReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmGovtReceiptsList.resx">
+      <DependentUpon>AdmGovtReceiptsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmTravelCostItemList.resx">
+      <DependentUpon>AdmTravelCostItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmTravelCostItem.resx">
+      <DependentUpon>AdmTravelCostItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmKPI.resx">
+      <DependentUpon>AdmKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmPayrollPassword.resx">
+      <DependentUpon>AdmPayrollPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent.resx">
+      <DependentUpon>Agent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentList.resx">
+      <DependentUpon>AgentList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentVslMap.resx">
+      <DependentUpon>AgentVslMap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentVslMapList.resx">
+      <DependentUpon>AgentVslMapList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Airline.resx">
+      <DependentUpon>Airline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirlineList.resx">
+      <DependentUpon>AirlineList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Airport.resx">
+      <DependentUpon>Airport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirportList.resx">
+      <DependentUpon>AirportList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankList.resx">
+      <DependentUpon>BankList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacity.resx">
+      <DependentUpon>Capacity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CBAType.resx">
+      <DependentUpon>CBAType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CBATypeList.resx">
+      <DependentUpon>CBATypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertFunc.resx">
+      <DependentUpon>CertFunc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertFuncList.resx">
+      <DependentUpon>CertFuncList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertLimit.resx">
+      <DependentUpon>CertLimit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertLimitList.resx">
+      <DependentUpon>CertLimitList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertType.resx">
+      <DependentUpon>CertType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertTypeList.resx">
+      <DependentUpon>CertTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company.resx">
+      <DependentUpon>Company.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyDefined.resx">
+      <DependentUpon>CompanyDefined.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyDefinedList.resx">
+      <DependentUpon>CompanyDefinedList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyList.resx">
+      <DependentUpon>CompanyList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetenceTemplate.resx">
+      <DependentUpon>CompetenceTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetenceTemplateList.resx">
+      <DependentUpon>CompetenceTemplateList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompTempList.resx">
+      <DependentUpon>CompTempList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank.resx">
+      <DependentUpon>Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmBDORemittance.resx">
+      <DependentUpon>AdmBDORemittance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugData.resx">
+      <DependentUpon>DebugData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramSettings_Templates.resx">
+      <DependentUpon>ProgramSettings_Templates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformTemplate.resx">
+      <DependentUpon>UniformTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformTemplateList.resx">
+      <DependentUpon>UniformTemplateList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformIssueType.resx">
+      <DependentUpon>UniformIssueType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformIssueTypeList.resx">
+      <DependentUpon>UniformIssueTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Garment.resx">
+      <DependentUpon>Garment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GarmentList.resx">
+      <DependentUpon>GarmentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GarmentType.resx">
+      <DependentUpon>GarmentType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GarmentTypeList.resx">
+      <DependentUpon>GarmentTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBConnectionFile.resx">
+      <DependentUpon>DBConnectionFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdlgAdmPayrollPass.resx">
+      <DependentUpon>fdlgAdmPayrollPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMTPConfig.resx">
+      <DependentUpon>SMTPConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdatePayScale.resx">
+      <DependentUpon>frmUpdatePayScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequiredTraining.resx">
+      <DependentUpon>RequiredTraining.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequiredTrainingList.resx">
+      <DependentUpon>RequiredTrainingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Country.resx">
+      <DependentUpon>Country.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapacityList.resx">
+      <DependentUpon>CapacityList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryList.resx">
+      <DependentUpon>CountryList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course.resx">
+      <DependentUpon>Course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseCost.resx">
+      <DependentUpon>CourseCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseCostList.resx">
+      <DependentUpon>CourseCostList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseInst.resx">
+      <DependentUpon>CourseInst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseInstList.resx">
+      <DependentUpon>CourseInstList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseList.resx">
+      <DependentUpon>CourseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewCmpl.resx">
+      <DependentUpon>CrewCmpl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewCmplList.resx">
+      <DependentUpon>CrewCmplList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Currency.resx">
+      <DependentUpon>Currency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrencyList.resx">
+      <DependentUpon>CurrencyList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUtility.resx">
+      <DependentUpon>DataUtility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department.resx">
+      <DependentUpon>Department.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentList.resx">
+      <DependentUpon>DepartmentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocGroup.resx">
+      <DependentUpon>DocGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocGroupList.resx">
+      <DependentUpon>DocGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmDocument.resx">
+      <DependentUpon>AdmDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentList.resx">
+      <DependentUpon>DocumentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employer.resx">
+      <DependentUpon>Employer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerList.resx">
+      <DependentUpon>EmployerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fleet.resx">
+      <DependentUpon>Fleet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetList.resx">
+      <DependentUpon>FleetList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramSettings.resx">
+      <DependentUpon>ProgramSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmMain.resx">
+      <DependentUpon>frmAdmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Language.resx">
+      <DependentUpon>Language.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageList.resx">
+      <DependentUpon>LanguageList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logo.resx">
+      <DependentUpon>Logo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedCert.resx">
+      <DependentUpon>MedCert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedCertList.resx">
+      <DependentUpon>MedCertList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MgFleet.resx">
+      <DependentUpon>MgFleet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MgFleetList.resx">
+      <DependentUpon>MgFleetList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MgrTechList.resx">
+      <DependentUpon>MgrTechList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MgrTech.resx">
+      <DependentUpon>MgrTech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinCrew.resx">
+      <DependentUpon>MinCrew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinCrewList.resx">
+      <DependentUpon>MinCrewList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NatInfo.resx">
+      <DependentUpon>NatInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NatInfoList.resx">
+      <DependentUpon>NatInfoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayScale.resx">
+      <DependentUpon>PayScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayScaleList.resx">
+      <DependentUpon>PayScaleList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhilHealth.resx">
+      <DependentUpon>PhilHealth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhilHealthList.resx">
+      <DependentUpon>PhilHealthList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICost.resx">
+      <DependentUpon>PICost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICostList.resx">
+      <DependentUpon>PICostList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Port.resx">
+      <DependentUpon>Port.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortAgent.resx">
+      <DependentUpon>PortAgent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortAgentList.resx">
+      <DependentUpon>PortAgentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortList.resx">
+      <DependentUpon>PortList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rank.resx">
+      <DependentUpon>Rank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankGroup.resx">
+      <DependentUpon>RankGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankGroupList.resx">
+      <DependentUpon>RankGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankList.resx">
+      <DependentUpon>RankList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankType.resx">
+      <DependentUpon>RankType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankTypeList.resx">
+      <DependentUpon>RankTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rate.resx">
+      <DependentUpon>Rate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RateList.resx">
+      <DependentUpon>RateList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relation.resx">
+      <DependentUpon>Relation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelationList.resx">
+      <DependentUpon>RelationList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemitRcpt.resx">
+      <DependentUpon>RemitRcpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemitRcptList.resx">
+      <DependentUpon>RemitRcptList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signatories.resx">
+      <DependentUpon>Signatories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignatoriesList.resx">
+      <DependentUpon>SignatoriesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSS.resx">
+      <DependentUpon>SSS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSSList.resx">
+      <DependentUpon>SSSList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status.resx">
+      <DependentUpon>Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusList.resx">
+      <DependentUpon>StatusList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelDoc.resx">
+      <DependentUpon>TravelDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelDocList.resx">
+      <DependentUpon>TravelDocList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vessel.resx">
+      <DependentUpon>Vessel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VesselGroup.resx">
+      <DependentUpon>VesselGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VesselGroupList.resx">
+      <DependentUpon>VesselGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VesselList.resx">
+      <DependentUpon>VesselList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VesselType.resx">
+      <DependentUpon>VesselType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VesselTypeList.resx">
+      <DependentUpon>VesselTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageASH.resx">
+      <DependentUpon>WageASH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageAshEmp.resx">
+      <DependentUpon>WageAshEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageAshEmpList.resx">
+      <DependentUpon>WageAshEmpList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageAshList.resx">
+      <DependentUpon>WageAshList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageDen.resx">
+      <DependentUpon>WageDen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageDenList.resx">
+      <DependentUpon>WageDenList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageInfo.resx">
+      <DependentUpon>WageInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageInfoList.resx">
+      <DependentUpon>WageInfoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageONB.resx">
+      <DependentUpon>WageONB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageOnbList.resx">
+      <DependentUpon>WageOnbList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WagePrd.resx">
+      <DependentUpon>WagePrd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WagePrdList.resx">
+      <DependentUpon>WagePrdList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageScaleCalendar.resx">
+      <DependentUpon>WageScaleCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WageScaleCalendarList.resx">
+      <DependentUpon>WageScaleCalendarList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WMBP.resx">
+      <DependentUpon>WMBP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WMBPList.resx">
+      <DependentUpon>WMBPList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audit\Audit.vbproj">
+      <Project>{13ECA2FF-8CAB-4DC2-8C44-999B1E2BB952}</Project>
+      <Name>Audit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseControl\BaseControl.vbproj">
+      <Project>{C096B102-0A25-4E16-9863-2D63677C7CB7}</Project>
+      <Name>BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocumentViewer\DocumentViewer.vbproj">
+      <Project>{D0CDCD9F-2ECB-4133-8632-98ED2604D69D}</Project>
+      <Name>DocumentViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportAutoEmail\ReportAutoEmail.vbproj">
+      <Project>{D7B2F3FD-081F-40DF-8684-C960EA20EF1F}</Project>
+      <Name>ReportAutoEmail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewMPS_Admin_48x48.ico" />
+    <None Include="Resources\bdo 32x32.png" />
+    <None Include="Resources\kpiMain.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

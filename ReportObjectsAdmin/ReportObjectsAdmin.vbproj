@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1C8902E9-B530-48C9-8921-A399F43BD82A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportObjectsAdmin</RootNamespace>
+    <AssemblyName>ReportObjectsAdmin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>ReportObjectsAdmin.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.XtraPrinting" />
+    <Import Include="DevExpress.XtraReports" />
+    <Import Include="DevExpress.XtraReports.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="Reports" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="Class\AdminAgent.vb" />
+    <Compile Include="Class\AdminCapacity.vb" />
+    <Compile Include="Class\AdminCertificate.vb" />
+    <Compile Include="Class\AdminCompetence.vb" />
+    <Compile Include="Class\AdminCourse.vb" />
+    <Compile Include="Class\AdminCrewCompliment.vb" />
+    <Compile Include="Class\AdminCrewEmployer.vb" />
+    <Compile Include="Class\AdminFleet.vb" />
+    <Compile Include="Class\AdminMedicalDoc.vb" />
+    <Compile Include="Class\AdminNatInfo.vb" />
+    <Compile Include="Class\AdminOwner.vb" />
+    <Compile Include="Class\AdminPay_WagesAshore.vb" />
+    <Compile Include="Class\AdminPort.vb" />
+    <Compile Include="Class\AdminPrincipal.vb" />
+    <Compile Include="Class\AdminRank.vb" />
+    <Compile Include="Class\AdminStatus.vb" />
+    <Compile Include="Class\AdminTravelAgent.vb" />
+    <Compile Include="Class\AdminTravelDoc.vb" />
+    <Compile Include="Class\AdminVslCoSpec.vb" />
+    <Compile Include="Class\AdminVslSpec.vb" />
+    <Compile Include="Class\AdminVslType.vb" />
+    <Compile Include="Class\AdminPay_WagesOnboard.vb" />
+    <Compile Include="Class\AdminPay_EmployersContri.vb" />
+    <Compile Include="Class\AdminPay_OtherWageItems.vb" />
+    <Compile Include="Class\AdminPay_CashAdvanceType.vb" />
+    <Compile Include="Class\AdminPay_WScale.vb" />
+    <Compile Include="Class\AdminPay_RemitReceipts.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_RemitReceipts.Designer.vb">
+      <DependentUpon>rptAdminPay_RemitReceipts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_RemitReceipts.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_WScale.Designer.vb">
+      <DependentUpon>rptAdminPay_WScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_WScale.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_CashAdvanceType.Designer.vb">
+      <DependentUpon>rptAdminPay_CashAdvanceType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_CashAdvanceType.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_OtherWageItems.Designer.vb">
+      <DependentUpon>rptAdminPay_OtherWageItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_OtherWageItems.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_WagesOnboard.Designer.vb">
+      <DependentUpon>rptAdminPay_WagesOnboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_WagesOnboard.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_EmployersContri.Designer.vb">
+      <DependentUpon>rptAdminPay_EmployersContri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_EmployersContri.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminAgent.Designer.vb">
+      <DependentUpon>rptAdminAgent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminAgent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminBank.Designer.vb">
+      <DependentUpon>rptAdminBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminBank.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCapacity.Designer.vb">
+      <DependentUpon>rptAdminCapacity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCapacity.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCertificate.Designer.vb">
+      <DependentUpon>rptAdminCertificate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCertificate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCompetence.Designer.vb">
+      <DependentUpon>rptAdminCompetence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCompetence.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCourse.Designer.vb">
+      <DependentUpon>rptAdminCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCourse.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCrewCompliment.Designer.vb">
+      <DependentUpon>rptAdminCrewCompliment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCrewCompliment.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCrewCompliment_sub.Designer.vb">
+      <DependentUpon>rptAdminCrewCompliment_sub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCrewCompliment_sub.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminCrewEmployer.Designer.vb">
+      <DependentUpon>rptAdminCrewEmployer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminCrewEmployer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminFleet.Designer.vb">
+      <DependentUpon>rptAdminFleet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminFleet.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminNatInfo.Designer.vb">
+      <DependentUpon>rptAdminNatInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminNatInfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminOwner.Designer.vb">
+      <DependentUpon>rptAdminOwner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminOwner.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPort.Designer.vb">
+      <DependentUpon>rptAdminPort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPort.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPrincipal.Designer.vb">
+      <DependentUpon>rptAdminPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPrincipal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminRank.Designer.vb">
+      <DependentUpon>rptAdminRank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminRank.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminStatus.Designer.vb">
+      <DependentUpon>rptAdminStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminStatus.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminTravelDoc.Designer.vb">
+      <DependentUpon>rptAdminTravelDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminTravelDoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminVslCoSpec.Designer.vb">
+      <DependentUpon>rptAdminVslCoSpec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminVslCoSpec.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminVslSpec.Designer.vb">
+      <DependentUpon>rptAdminVslSpec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminVslSpec.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminVslType.Designer.vb">
+      <DependentUpon>rptAdminVslType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminVslType.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminMedicalDoc.Designer.vb">
+      <DependentUpon>rptAdminMedicalDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminMedicalDoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminTravelAgent.Designer.vb">
+      <DependentUpon>rptAdminTravelAgent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminTravelAgent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_WagesAshore.Designer.vb">
+      <DependentUpon>rptAdminPay_WagesAshore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAdminPay_WagesAshore.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_RemitReceipts.resx">
+      <DependentUpon>rptAdminPay_RemitReceipts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_WScale.resx">
+      <DependentUpon>rptAdminPay_WScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_CashAdvanceType.resx">
+      <DependentUpon>rptAdminPay_CashAdvanceType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_OtherWageItems.resx">
+      <DependentUpon>rptAdminPay_OtherWageItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_WagesOnboard.resx">
+      <DependentUpon>rptAdminPay_WagesOnboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_EmployersContri.resx">
+      <DependentUpon>rptAdminPay_EmployersContri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminAgent.resx">
+      <DependentUpon>rptAdminAgent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminBank.resx">
+      <DependentUpon>rptAdminBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCapacity.resx">
+      <DependentUpon>rptAdminCapacity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCertificate.resx">
+      <DependentUpon>rptAdminCertificate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCompetence.resx">
+      <DependentUpon>rptAdminCompetence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCourse.resx">
+      <DependentUpon>rptAdminCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCrewCompliment.resx">
+      <DependentUpon>rptAdminCrewCompliment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCrewCompliment_sub.resx">
+      <DependentUpon>rptAdminCrewCompliment_sub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminCrewEmployer.resx">
+      <DependentUpon>rptAdminCrewEmployer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminFleet.resx">
+      <DependentUpon>rptAdminFleet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminNatInfo.resx">
+      <DependentUpon>rptAdminNatInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminOwner.resx">
+      <DependentUpon>rptAdminOwner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPort.resx">
+      <DependentUpon>rptAdminPort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPrincipal.resx">
+      <DependentUpon>rptAdminPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminRank.resx">
+      <DependentUpon>rptAdminRank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminStatus.resx">
+      <DependentUpon>rptAdminStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminTravelDoc.resx">
+      <DependentUpon>rptAdminTravelDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminVslCoSpec.resx">
+      <DependentUpon>rptAdminVslCoSpec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminVslSpec.resx">
+      <DependentUpon>rptAdminVslSpec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminVslType.resx">
+      <DependentUpon>rptAdminVslType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminMedicalDoc.resx">
+      <DependentUpon>rptAdminMedicalDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminTravelAgent.resx">
+      <DependentUpon>rptAdminTravelAgent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAdminPay_WagesAshore.resx">
+      <DependentUpon>rptAdminPay_WagesAshore.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\AdminBank.vb" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

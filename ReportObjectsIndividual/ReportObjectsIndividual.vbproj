@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{197B5BF5-1A01-46E5-825E-805484FA5B74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportObjectsIndividual</RootNamespace>
+    <AssemblyName>ReportObjectsIndividual</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsIndividual.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsIndividual.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>ReportObjectsIndividual.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>ReportObjectsIndividual.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Data.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Printing.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPrinting.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraReports.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.Utils" />
+    <Import Include="DevExpress.XtraPrinting" />
+    <Import Include="DevExpress.XtraReports" />
+    <Import Include="DevExpress.XtraReports.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPS4" />
+    <Import Include="Reports" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="Class\Amosup.vb" />
+    <Compile Include="Class\AppraisalSummary.vb" />
+    <Compile Include="Class\Appraisal_Indi.vb" />
+    <Compile Include="Class\BiodataComplete.vb" />
+    <Compile Include="Class\BiodataComplete_L.vb" />
+    <Compile Include="Class\BiodataEssential_L.vb" />
+    <Compile Include="Class\Certificates.vb" />
+    <Compile Include="Class\CrewUniform.vb" />
+    <Compile Include="Class\NISContract.vb" />
+    <Compile Include="Class\NIS.vb" />
+    <Compile Include="Class\filterSample.Designer.vb">
+      <DependentUpon>filterSample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\filterSample.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\MedHis.vb" />
+    <Compile Include="Class\POEADisembark.vb" />
+    <Compile Include="Class\POEAEmbark.vb" />
+    <Compile Include="Class\POEA_SCTA.vb" />
+    <Compile Include="Class\RetirementSumm.vb" />
+    <Compile Include="Class\SECIDForm.vb" />
+    <Compile Include="Class\TrainingStatus.vb" />
+    <Compile Include="Class\ServiceHistory.vb" />
+    <Compile Include="Class\TrainingReqPlanned.vb" />
+    <Compile Include="Class\BiodataEssential.vb" />
+    <Compile Include="Class\SeaServ.vb" />
+    <Compile Include="Class\Course.vb" />
+    <Compile Include="Class\Medical.vb" />
+    <Compile Include="Class\SeaServCertification.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\rptAppraisalReport_Indi.Designer.vb">
+      <DependentUpon>rptAppraisalReport_Indi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAppraisalReport_Indi.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAMOSUP.Designer.vb">
+      <DependentUpon>rptAMOSUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAMOSUP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAppraisalSummary.Designer.vb">
+      <DependentUpon>rptAppraisalSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAppraisalSummary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataComplete_L.Designer.vb">
+      <DependentUpon>rptBiodataComplete_L.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataComplete_L.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataEssential_L.Designer.vb">
+      <DependentUpon>rptBiodataEssential_L.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataEssential_L.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPOEAEmbark.Designer.vb">
+      <DependentUpon>rptPOEAEmbark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPOEAEmbark.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptMedHis.Designer.vb">
+      <DependentUpon>rptMedHis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptMedHis.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptNIS.Designer.vb">
+      <DependentUpon>rptNIS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptNIS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptNISContract.Designer.vb">
+      <DependentUpon>rptNISContract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptNISContract.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPOEADisembark.Designer.vb">
+      <DependentUpon>rptPOEADisembark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPOEADisembark.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptRetirementSumm.Designer.vb">
+      <DependentUpon>rptRetirementSumm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptRetirementSumm.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatusSub_Planned.Designer.vb">
+      <DependentUpon>rptTrainingStatusSub_Planned.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatusSub_Planned.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatusSub_Required.Designer.vb">
+      <DependentUpon>rptTrainingStatusSub_Required.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatusSub_Required.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatusSub_Completed.Designer.vb">
+      <DependentUpon>rptTrainingStatusSub_Completed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatusSub_Completed.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatus.Designer.vb">
+      <DependentUpon>rptTrainingStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrainingStatus.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptServiceHistory.Designer.vb">
+      <DependentUpon>rptServiceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptServiceHistory.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrainingPlanned.Designer.vb">
+      <DependentUpon>rptTrainingPlanned.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrainingPlanned.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataEssential.designer.vb">
+      <DependentUpon>rptBiodataEssential.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataEssential.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_CourseReq.Designer.vb">
+      <DependentUpon>rptBiodataSub_CourseReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_CourseReq.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_CourseCompl.Designer.vb">
+      <DependentUpon>rptBiodataSub_CourseCompl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_CourseCompl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_TravelDoc.designer.vb">
+      <DependentUpon>rptBiodataSub_TravelDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_TravelDoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInfoSheet.designer.vb">
+      <DependentUpon>rptInfoSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInfoSheet.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrainingRequired.Designer.vb">
+      <DependentUpon>rptTrainingRequired.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrainingRequired.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSeaServ.Designer.vb">
+      <DependentUpon>rptSeaServ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSeaServ.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataComplete.designer.vb">
+      <DependentUpon>rptBiodataComplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataComplete.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_Sbk.designer.vb">
+      <DependentUpon>rptBiodataSub_Sbk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_Sbk.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_SeaServ.Designer.vb">
+      <DependentUpon>rptBiodataSub_SeaServ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_SeaServ.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_Educ.Designer.vb">
+      <DependentUpon>rptBiodataSub_Educ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_Educ.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_Cert.Designer.vb">
+      <DependentUpon>rptBiodataSub_Cert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBiodataSub_Cert.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCourse.designer.vb">
+      <DependentUpon>rptCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCourse.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptMedical.Designer.vb">
+      <DependentUpon>rptMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptMedical.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSeaServCertification.designer.vb">
+      <DependentUpon>rptSeaServCertification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSeaServCertification.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTravelDoc.Designer.vb">
+      <DependentUpon>rptTravelDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTravelDoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCertificates.Designer.vb">
+      <DependentUpon>rptCertificates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCertificates.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\TravelDoc.vb" />
+    <Compile Include="Reports\rptPOEA_SCTA.Designer.vb">
+      <DependentUpon>rptPOEA_SCTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPOEA_SCTA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSECIDForm_pg1.Designer.vb">
+      <DependentUpon>rptSECIDForm_pg1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSECIDForm_pg1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCrewUniform.Designer.vb">
+      <DependentUpon>rptCrewUniform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCrewUniform.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Class\filterSample.resx">
+      <DependentUpon>filterSample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAppraisalReport_Indi.resx">
+      <DependentUpon>rptAppraisalReport_Indi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAMOSUP.resx">
+      <DependentUpon>rptAMOSUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAppraisalSummary.resx">
+      <DependentUpon>rptAppraisalSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataComplete_L.resx">
+      <DependentUpon>rptBiodataComplete_L.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataEssential_L.resx">
+      <DependentUpon>rptBiodataEssential_L.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPOEAEmbark.resx">
+      <DependentUpon>rptPOEAEmbark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMedHis.resx">
+      <DependentUpon>rptMedHis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptNIS.resx">
+      <DependentUpon>rptNIS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptNISContract.resx">
+      <DependentUpon>rptNISContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPOEADisembark.resx">
+      <DependentUpon>rptPOEADisembark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptRetirementSumm.resx">
+      <DependentUpon>rptRetirementSumm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrainingStatusSub_Planned.resx">
+      <DependentUpon>rptTrainingStatusSub_Planned.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrainingStatusSub_Required.resx">
+      <DependentUpon>rptTrainingStatusSub_Required.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrainingStatusSub_Completed.resx">
+      <DependentUpon>rptTrainingStatusSub_Completed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrainingStatus.resx">
+      <DependentUpon>rptTrainingStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptServiceHistory.resx">
+      <DependentUpon>rptServiceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrainingPlanned.resx">
+      <DependentUpon>rptTrainingPlanned.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataEssential.resx">
+      <DependentUpon>rptBiodataEssential.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_CourseReq.resx">
+      <DependentUpon>rptBiodataSub_CourseReq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_CourseCompl.resx">
+      <DependentUpon>rptBiodataSub_CourseCompl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_TravelDoc.resx">
+      <DependentUpon>rptBiodataSub_TravelDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInfoSheet.resx">
+      <DependentUpon>rptInfoSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrainingRequired.resx">
+      <DependentUpon>rptTrainingRequired.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSeaServ.resx">
+      <DependentUpon>rptSeaServ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataComplete.resx">
+      <DependentUpon>rptBiodataComplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_Sbk.resx">
+      <DependentUpon>rptBiodataSub_Sbk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_SeaServ.resx">
+      <DependentUpon>rptBiodataSub_SeaServ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_Educ.resx">
+      <DependentUpon>rptBiodataSub_Educ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBiodataSub_Cert.resx">
+      <DependentUpon>rptBiodataSub_Cert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCourse.resx">
+      <DependentUpon>rptCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMedical.resx">
+      <DependentUpon>rptMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSeaServCertification.resx">
+      <DependentUpon>rptSeaServCertification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTravelDoc.resx">
+      <DependentUpon>rptTravelDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCertificates.resx">
+      <DependentUpon>rptCertificates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPOEA_SCTA.resx">
+      <DependentUpon>rptPOEA_SCTA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSECIDForm_pg1.resx">
+      <DependentUpon>rptSECIDForm_pg1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCrewUniform.resx">
+      <DependentUpon>rptCrewUniform.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseControl\BaseControl.vbproj">
+      <Project>{C096B102-0A25-4E16-9863-2D63677C7CB7}</Project>
+      <Name>BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MPS4\MPS4.vbproj">
+      <Project>{B378CC8D-6107-4BF9-A589-69716516AE40}</Project>
+      <Name>MPS4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.vbproj">
+      <Project>{E1583BCE-1D28-4B72-B7C3-A0D60625C291}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

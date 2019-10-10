@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B378CC8D-6107-4BF9-A589-69716516AE40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>MPS4</RootNamespace>
+    <AssemblyName>MPS4</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>MPS4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>MPS4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>MPS4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\MPS4\bin\Debug\</OutputPath>
+    <DocumentationFile>MPS4.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Data.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Printing.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.RichEdit.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Sparkline.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Utils.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2010.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Xpf.Themes.VS2010.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraBars.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraEditors.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraGrid.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraLayout.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPrinting.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraTreeList.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BaseControl" />
+    <Import Include="BaseControl.My" />
+    <Import Include="DevExpress.LookAndFeel" />
+    <Import Include="DevExpress.Xpf" />
+    <Import Include="DevExpress.XtraRichEdit.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Security" />
+    <Import Include="System.Security.AccessControl" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Utilities" />
+    <Import Include="Utilities.My" />
+    <Import Include="Utilities.My.Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.vb">
+      <Link>VersionInfo.vb</Link>
+    </Compile>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\PayrollModule.vb" />
+    <Compile Include="Connection.Designer.vb">
+      <DependentUpon>Connection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmActivityDocs.Designer.vb">
+      <DependentUpon>frmActivityDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivityDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidateByAdministrator.designer.vb">
+      <DependentUpon>frmValidateByAdministrator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidateByAdministrator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GTRS\frmGTravelNotif.Designer.vb">
+      <DependentUpon>frmGTravelNotif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GTRS\frmGTravelNotif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GTRS\modGTRS.vb" />
+    <Compile Include="Legends.Designer.vb">
+      <DependentUpon>Legends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Legends.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mdComputerInfo.vb" />
+    <Compile Include="mdEncryptDecrypt.vb" />
+    <Compile Include="mdLicense.vb" />
+    <Compile Include="modCustom.vb" />
+    <Compile Include="MPS4Splash_Admin.Designer.vb">
+      <DependentUpon>MPS4Splash_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPS4Splash_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPS4Splash_Crew.Designer.vb">
+      <DependentUpon>MPS4Splash_Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPS4Splash_Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdjustDemoDates.designer.vb">
+      <DependentUpon>frmAdjustDemoDates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdjustDemoDates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivate.designer.vb">
+      <DependentUpon>frmActivate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnect.designer.vb">
+      <DependentUpon>frmConnect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserSetting.Designer.vb">
+      <DependentUpon>frmUserSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputPass.Designer.vb">
+      <DependentUpon>frmInputPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPS4DataSources.vb" />
+    <Compile Include="MPS4Splash.Designer.vb">
+      <DependentUpon>MPS4Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPS4Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPS4BasicFunctions.vb" />
+    <Compile Include="MPS4Functions.vb" />
+    <Compile Include="MPSArchiveUtil.vb" />
+    <Compile Include="MPSInputBox.Designer.vb">
+      <DependentUpon>MPSInputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPSInputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="AddUtility.Designer.vb">
+      <DependentUpon>AddUtility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUtility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pdfTemplate.Designer.vb">
+      <DependentUpon>pdfTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pdfTemplate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QuickAccessButtons.Designer.vb">
+      <DependentUpon>QuickAccessButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuickAccessButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Service References\GTRSServiceReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateRequiredDLL.vb" />
+    <Compile Include="VersionUpdates.Designer.vb">
+      <DependentUpon>VersionUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VersionUpdates.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThemeControl.Designer.vb">
+      <DependentUpon>ThemeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDetail.vb" />
+    <Compile Include="UserPreference.Designer.vb">
+      <DependentUpon>UserPreference.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserPreference.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUtil.vb" />
+    <Compile Include="Waitform.Designer.vb">
+      <DependentUpon>Waitform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Waitform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection.resx">
+      <DependentUpon>Connection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivityDocs.resx">
+      <DependentUpon>frmActivityDocs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidateByAdministrator.resx">
+      <DependentUpon>frmValidateByAdministrator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GTRS\frmGTravelNotif.resx">
+      <DependentUpon>frmGTravelNotif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legends.resx">
+      <DependentUpon>Legends.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPS4Splash_Admin.resx">
+      <DependentUpon>MPS4Splash_Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPS4Splash_Crew.resx">
+      <DependentUpon>MPS4Splash_Crew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdjustDemoDates.resx">
+      <DependentUpon>frmAdjustDemoDates.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivate.resx">
+      <DependentUpon>frmActivate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnect.resx">
+      <DependentUpon>frmConnect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserSetting.resx">
+      <DependentUpon>frmUserSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputPass.resx">
+      <DependentUpon>frmInputPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPS4Splash.resx">
+      <DependentUpon>MPS4Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPSInputBox.resx">
+      <DependentUpon>MPSInputBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUtility.resx">
+      <DependentUpon>AddUtility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pdfTemplate.resx">
+      <DependentUpon>pdfTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickAccessButtons.resx">
+      <DependentUpon>QuickAccessButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionUpdates.resx">
+      <DependentUpon>VersionUpdates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemeControl.resx">
+      <DependentUpon>ThemeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPreference.resx">
+      <DependentUpon>UserPreference.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waitform.resx">
+      <DependentUpon>Waitform.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\MPS5Help.chm" />
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.AddPassengerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.AuthenticateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.CancelPassengerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.CancelTravelRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.CreateTravelRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.UpdatePassengerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.UpdateTravelRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.ViewTravelRequestByDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\MPS4.GTRSServiceReference.ViewTravelRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GTRSServiceReference\OcsService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseControl\BaseControl.vbproj">
+      <Project>{C096B102-0A25-4E16-9863-2D63677C7CB7}</Project>
+      <Name>BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.vbproj">
+      <Project>{1DDE1B22-3DDC-4D1C-AEC6-ECC286074B3C}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{97D36732-8014-4BCC-B8D5-A5506AB442DE}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="48x48.ico" />
+    <Content Include="NewMPS_Admin_48x48.ico" />
+    <None Include="Service References\GTRSServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GTRSServiceReference\configuration.svcinfo" />
+    <None Include="Service References\GTRSServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\GTRSServiceReference\OcsService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GTRSServiceReference\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

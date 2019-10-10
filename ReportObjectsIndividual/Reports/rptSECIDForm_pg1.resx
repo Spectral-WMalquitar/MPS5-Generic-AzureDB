@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="XrLabel39.Text" xml:space="preserve">
+    <value>By signing this OFW VISA Electron Card application form, I/we are applying for my/our Equitable PCI Bank or Bank Consortium account/s to be
+designated for gaining access for transactions to be carried out using the OFW VISA Electron Card. l/We hereby certify that l/we have read and agree to
+abide by and be bound, jointly and severally, by the terms and conditions governing the Equitable PCI Bank VISA Electron Facility and all future
+amendments thereto. l/We likewise agree to waive my/our right/s regarding the confidentiality of deposits under R.A. 1405, as amended, as the disclosure
+is necessary and relevant to complete the transactions desired by Equitable CardNetwork, Inc. and the cardholder/s. l/We further warrant that all
+information given by me/us in this application is true and correct, that the signature/s affixed herein is the same as the signature/s reflected in the signature
+cards of the account/s designated to be accessed and I/we authorize Equitable CardNetwork, Inc. to confirm all information from whatever source it may
+choose. l/We hereby authorize the payment of funds or transactions of other business on my/our account/s in favor of Equitable CardNetwork, Inc. for any
+and all OFW VISA Electron Card transactions pursuant to this Agreement and, if the account to be designated is a Joint (either/or) account, that either one
+of us is authorized to do whatever he/she so desires with the funds without the consent of the other depositor/s.
+Bank Consortium here refers to the four other banks aside from Equitable PCI Bank who are joining in the linking of the respective bank's peso
+savings account to the OFW Visa Electron Card.
+TERMS AND CONDITIONS
+1. Definition of Terms
+a) Electronic Data Capture (EDC) Terminal. A Point of Sale (POS) terminal that reads the card details on the OFW VISA Electron Card magnetic
+stripe when the card is swiped through the terminal, without the need of a manual imprinter and/or having merchant's representatives manually enter the
+information.
+b) Primary Designated Account. A peso savings account which the cardholder wants to be accessed for EDC transactions at VISA-affiliated merchant
+establishments within and outside the Philippines; for peso cash withdrawals from an Equitable PCI Bank's or any BancNet/MegaLink Automated Tellering
+Machines (ATMs), and for dollar cash withdrawals at a VISA Electron affiliated ATM outside the Philippines.
+2. OFW VISA Electron Card. The applicant/s whose application is approved (hereinafter referred to as cardholder/s for brevity) shall be issued an OFW
+VISA Electron Card bearing his/her card number. The cardholder assumes full responsibility for the security, custody and possession of his/her OFW
+VISA Electron Card and PIN as well as transactions made using the said OFW VISA Electron Card and PIN.
+3. Expiry and Renewal of the Card. Unless earlier terminated by Equitable CardNetwork, Inc., voluntarily cancelled or returned by the cardholder or the
+designated account/s is/are closed for whatever reason by Equitable PCI Bank or the Bank Consortium, the OFW VISA Electron Card shall be valid up to
+the date indicated thereon and shall be automatically renewed after its expiration.
+4. OFW VISA Electron Card Transactions. The OFW VISA Electron Card shall be used to make the following transactions on the designated account:
+a) Fund transfers in favor of Equitable CardNetwork, Inc. for OFW VISA Electron Card EDC transactions at VISA Electron affiliated merchant
+establishments.
+b) Cash Withdrawals through the ATM;
+5. Personal Identification Number (PIN). The cardholder is required to obtain a Personal Identification Number (PIN) from an Equitable PCI Bank or Bank
+Consortium branch to gain access to the designated account/s and withdraw cash through any Equitable PCI Bank or BancNet/MegaLink ATMs or any
+ATMs outside the Philippines bearing the VISA Electron Symbol. For record purposes, cardholder may be required by Equitable PCI Bank or Bank
+Consortium to fill out an application form prior to pinning.
+6. ATM Transaction Fees. The following transaction fees shall be imposed on all ATM transactions of the cardholder outside the Philippines:
+US $ 3.00 for every Electron ATM transaction approved;
+US $ 1.00 for every Electron ATM balance inquiry;
+US $ 1.00 for every Electron ATM transaction declined for reason insufficient funds and/or exceeds the daily transaction frequency.
+7. Conversion of Transaction. If the designated account is a peso savings account and cardholder uses his OFW VISA Electron Card outside the
+Philippines, the transaction shall be converted to its peso equivalent based on the VISA Foreign Exchange rate at the time of the transaction.
+8. Transaction Receipt. Transaction receipts are printed on tape by the ATM and may be taken or secured by the cardholder from the ATM itself after
+every ATM cash withdrawal. Transaction receipts for transactions at a Visa Electron affiliated merchant establishment is generated when the OFW VISA
+Electron Card is swiped through the EDC terminal of the merchant. The cardholder signs the said transaction receipt and retains a copy thereof.
+9. Denied/Declined Transactions. A transaction may not be made by the cardholder if the designated account is not properly funded, or the EDC terminal
+at the merchant establishment is off-line, or the OFW VISA Electron Card is suspended/blocked for reasons of security. To this end, the cardholder shall
+hold Equitable PCI Bank or Bank Consortium and Equitable CardNetwork, Inc. free and harmless from any liability for these denied/declined transactions.
+10. Loss or Theft of Card. In the event that the Card is lost or stolen, cardholder agrees to immediately report its loss by calling the twenty-four (24) hour
+Authorization Center of Equitable CardNetwork, Inc. and thereafter submitting an Affidavit of Loss, stating the time, date and place of the loss, and the last
+transaction made prior to the loss. However, purchases made/incurred arising from the use of the stolen/lost OFW VISA Electron Card before receipt by
+Equitable CardNetwork, Inc. of the written notice of loss shall be for the exclusive account of the cardholder even if the signature of the cardholder is
+forged.
+11. Miscellaneous Fees. Cardholder agrees to pay the fees, which Equitable CardNetwork, Inc. may impose on lost card replacements, spoiled cards, etc.
+12. Non-transferability Clause. The OFW VISA Electron Card as an ID Card is the property of Department of Labor and Industry. But the Visa Electron
+functionality of the OFW Visa Electron Card is the sole property of Equitable CardNetwork, Inc., non-transferable and honored by Equitable CardNetwork,
+Inc.'s VISA Electron affiliated merchants only when properly signed by and presented by the authorized cardholder. The Visa Electron privileges of the
+OFW VISA Electron Card may be terminated by Equitable CardNetwork, Inc. at any time for whatever cause and cardholder agrees to hold Equitable
+CardNetwork, Inc. free and harmless from any claim for damages arising from such termination. Continued use of the OFW VISA Electron Card as a debit
+and ATM card after receipt of notice shall be considered fraudulent.
+13. Other Agreements. Transactions under this Agreement shall likewise be subject to Equitable PCI Bank's and Bank Consortium rules and regulations
+pertaining to savings accounts and the VISA credit card agreement, insofar as they are applicable.
+14. Venue of Action. Attorney's Fees. Damages. Should judicial action be necessary to enforce this Agreement, or to collect the cardholder's obligation
+under this Agreement, venue of all actions shall be in Makati City. In case the account is referred to a collection agency or law firm, cardholder agrees to
+pay the costs of collection and attorney's fees.
+15. Separability Clause. Should any provision of this Agreement be declared unconstitutional, invalid or unenforceable by a court of competent jurisdiction,
+such declaration shall not affect in any manner whatsoever the constitutionality, validity or enforceability of the other provisions of this Agreement.</value>
+  </data>
+</root>
